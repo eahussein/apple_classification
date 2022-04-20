@@ -12,7 +12,7 @@ def threshold (X, y, direction):
     
     inTrain, outTrain = (list(t) for t in zip(*sorted(zip(th, np.array(y).flatten()))))
     
-    thresholds = np.arange(inTrain[0], inTrain[-1]+1 , 0.001)
+    thresholds = np.arange(inTrain[0], inTrain[-1]+1 , 0.000001)
     # print(inTrain[0])
     # print(inTrain[-1]+1)
     

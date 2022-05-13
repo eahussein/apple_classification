@@ -11,7 +11,6 @@ def cv (m, itr, p, xtrain, ytrain, xtest, ytest):
     clf = RandomizedSearchCV(estimator = m, param_distributions = p, n_iter = itr, cv = 3, verbose=0, random_state=42, n_jobs = -1)
     clf.fit(X = np.array(xtrain), y=np.array(ytrain).reshape(len(ytrain)).ravel())
     pred = clf.predict(xtest)
-
     return precision_score(ytest, pred), clf
 
 

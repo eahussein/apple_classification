@@ -32,5 +32,5 @@ def get_accuracy_ml (m, itr, p, xTrain, yTrain, xTest, yTest):
             
         y_predict = clfTot.predict(x_test)
         
-        jackTestArr.append(accuracy_score(y_test, y_predict))  
+        jackTestArr.append(precision_score(y_test, y_predict))  
     return  accTot, jackTrainArr, jackTestArr

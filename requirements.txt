@@ -9,7 +9,6 @@ asttokens==2.0.5
 attrs==21.4.0
 backcall==0.2.0
 certifi==2021.10.8
-cesium==0.9.12
 charset-normalizer==2.0.12
 cloudpickle==2.0.0
 cycler==0.11.0
@@ -35,7 +34,6 @@ jupyter-client==7.2.2
 jupyter-core==4.9.2
 kiwisolver==1.4.2
 locket==0.2.1
-lxml==4.8.0
 matplotlib==3.5.1
 matplotlib-inline==0.1.3
 multitasking==0.0.10
@@ -50,7 +48,6 @@ partd==1.2.0
 patsy==0.5.2
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.1.0
 prompt-toolkit==3.0.29
 psutil==5.9.0
 ptyprocess==0.7.0

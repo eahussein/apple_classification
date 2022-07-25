@@ -17,18 +17,18 @@ def graph_df (x_rolls, y, n):
 
             if y[i] == 'S':
                 if S_Flag:
-                    plt.plot(np.array(x.columns), lineSpec, color = 'red', label = "S") # plotting the good apples
+                    plt.plot(np.array(x.columns), lineSpec, 'r:', label = "S") # plotting the good apples
                     S_Flag = False
-                plt.plot(np.array(x.columns), lineSpec, color = 'red') # plotting the good apples
+                plt.plot(np.array(x.columns), lineSpec, 'r:') # plotting the good apples
             if y[i] == 'B':
                 if B_Flag == True:
-                    plt.plot(np.array(x.columns), lineSpec, color = 'blue', label = "B") # plotting the good apples
+                    plt.plot(np.array(x.columns), lineSpec,'b-', label = "B") # plotting the good apples
                     B_Flag = False
-                plt.plot(np.array(x.columns), lineSpec, color = 'blue') # plotting the bad apples
+                plt.plot(np.array(x.columns), lineSpec,  'b-') # plotting the bad apples
 
         plt.title("GS apples", fontweight ='bold', fontsize =12)    
-        plt.xlabel("Wavelength", fontweight ='bold', fontsize =12)
-        plt.ylabel("Frequency", fontweight ='bold', fontsize =12)
+        plt.xlabel("Wavelength (nm)", fontweight ='bold', fontsize =12)
+        plt.ylabel("Absorbance (au)", fontweight ='bold', fontsize =12)
         # plt.ylim([-.3,2.2])
 
         plt.legend()
